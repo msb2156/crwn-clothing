@@ -2,8 +2,7 @@ import React from 'react';
 import HomePage from './pages/homepage/homepage.component';
 import './App.css'
 import { Switch, Route } from 'react-router-dom';
-import Hats from './components/menu-item/hats';
-
+import ShopPage from './pages/shop/shop.component';
 function App() {
 
   
@@ -12,7 +11,7 @@ function App() {
     <Switch>
     {/* router props are passed only to its direct children */}
       <Route path="/" exact component={HomePage} />
-      <Route path="/hats" exact component={Hats} />
+      <Route path="/shop" component={ShopPage} />
     </Switch>
     </div>
   );
